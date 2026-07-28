@@ -1,0 +1,562 @@
+{
+  "_readme": "Topic bank for the daily 3x/day content pipeline. Each entry: slug (filename), title, category (area|condition|other), status (pending|published), and notes for the writer. Pick topics in order within a category, rotating category so each day covers 1 area + 1 condition + 1 other where possible. Mark status=published + add published_date + published_url once live. When fewer than 15 pending topics remain, generate 20-30 more following the same categories and add them here before continuing.",
+  "topics": [
+    {
+      "slug": "hijama-home-service-clifton-karachi",
+      "title": "Hijama Home Service in Clifton Karachi",
+      "category": "area",
+      "area": "Clifton",
+      "status": "published",
+      "published_date": "2026-07-28"
+    },
+    {
+      "slug": "hijama-for-migraine-and-headaches",
+      "title": "Hijama for Migraine & Headaches",
+      "category": "condition",
+      "condition": "migraine and headaches",
+      "status": "published",
+      "published_date": "2026-07-28"
+    },
+    {
+      "slug": "hijama-guidance-for-patients-in-lahore",
+      "title": "Hijama Guidance for Patients in Lahore — Should You Travel to Karachi?",
+      "category": "other",
+      "subtype": "city-guide",
+      "city": "Lahore",
+      "status": "published",
+      "published_date": "2026-07-28"
+    },
+    {
+      "slug": "hijama-home-service-malir-karachi",
+      "title": "Hijama Home Service in Malir Karachi",
+      "category": "area",
+      "area": "Malir",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-korangi-karachi",
+      "title": "Hijama Home Service in Korangi Karachi",
+      "category": "area",
+      "area": "Korangi",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-federal-b-area",
+      "title": "Hijama Home Service in Federal B Area Karachi",
+      "category": "area",
+      "area": "Federal B Area",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-pechs-karachi",
+      "title": "Hijama Home Service in PECHS Karachi",
+      "category": "area",
+      "area": "PECHS",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-bahadurabad-karachi",
+      "title": "Hijama Home Service in Bahadurabad Karachi",
+      "category": "area",
+      "area": "Bahadurabad",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-gulistan-e-johar-karachi",
+      "title": "Hijama Home Service in Gulistan-e-Johar Karachi",
+      "category": "area",
+      "area": "Gulistan-e-Johar",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-saddar-karachi",
+      "title": "Hijama Home Service in Saddar Karachi",
+      "category": "area",
+      "area": "Saddar",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-landhi-karachi",
+      "title": "Hijama Home Service in Landhi Karachi",
+      "category": "area",
+      "area": "Landhi",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-shah-faisal-colony",
+      "title": "Hijama Home Service in Shah Faisal Colony Karachi",
+      "category": "area",
+      "area": "Shah Faisal Colony",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-orangi-town-karachi",
+      "title": "Hijama Home Service in Orangi Town Karachi",
+      "category": "area",
+      "area": "Orangi Town",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-liaquatabad-karachi",
+      "title": "Hijama Home Service in Liaquatabad Karachi",
+      "category": "area",
+      "area": "Liaquatabad",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-north-karachi",
+      "title": "Hijama Home Service in North Karachi",
+      "category": "area",
+      "area": "North Karachi",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-surjani-town",
+      "title": "Hijama Home Service in Surjani Town Karachi",
+      "category": "area",
+      "area": "Surjani Town",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-scheme-33-karachi",
+      "title": "Hijama Home Service in Scheme 33 Karachi",
+      "category": "area",
+      "area": "Scheme 33",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-gulshan-e-maymar",
+      "title": "Hijama Home Service in Gulshan-e-Maymar Karachi",
+      "category": "area",
+      "area": "Gulshan-e-Maymar",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-nazimabad-karachi",
+      "title": "Hijama Home Service in Nazimabad Karachi",
+      "category": "area",
+      "area": "Nazimabad",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-garden-east-karachi",
+      "title": "Hijama Home Service in Garden East Karachi",
+      "category": "area",
+      "area": "Garden East",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-site-area-karachi",
+      "title": "Hijama Home Service in SITE Area Karachi",
+      "category": "area",
+      "area": "SITE Area",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-malir-cantt-karachi",
+      "title": "Hijama Home Service in Malir Cantonment Karachi",
+      "category": "area",
+      "area": "Malir Cantonment",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-baldia-town-karachi",
+      "title": "Hijama Home Service in Baldia Town Karachi",
+      "category": "area",
+      "area": "Baldia Town",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-new-karachi",
+      "title": "Hijama Home Service in New Karachi Town",
+      "category": "area",
+      "area": "New Karachi",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-gulzar-e-hijri",
+      "title": "Hijama Home Service in Gulzar-e-Hijri Karachi",
+      "category": "area",
+      "area": "Gulzar-e-Hijri",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-defence-phase-8",
+      "title": "Hijama Home Service in DHA Phase 8 Karachi",
+      "category": "area",
+      "area": "DHA Phase 8",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-boat-basin-karachi",
+      "title": "Hijama Home Service in Boat Basin, Clifton Karachi",
+      "category": "area",
+      "area": "Boat Basin",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-shahra-e-faisal",
+      "title": "Hijama Home Service near Shahra-e-Faisal Karachi",
+      "category": "area",
+      "area": "Shahra-e-Faisal",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-askari-karachi",
+      "title": "Hijama Home Service in Askari Housing Karachi",
+      "category": "area",
+      "area": "Askari",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-university-road-karachi",
+      "title": "Hijama Home Service near University Road Karachi",
+      "category": "area",
+      "area": "University Road",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-home-service-gulshan-e-hadeed",
+      "title": "Hijama Home Service in Gulshan-e-Hadeed, Bin Qasim",
+      "category": "area",
+      "area": "Gulshan-e-Hadeed",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-pcos-womens-cycle-health",
+      "title": "Hijama for PCOS & Irregular Periods",
+      "category": "condition",
+      "condition": "PCOS and irregular periods",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-joint-pain-arthritis",
+      "title": "Hijama for Joint Pain & Arthritis",
+      "category": "condition",
+      "condition": "joint pain and arthritis",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-frozen-shoulder",
+      "title": "Hijama for Frozen Shoulder",
+      "category": "condition",
+      "condition": "frozen shoulder",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-knee-pain",
+      "title": "Hijama for Knee Pain",
+      "category": "condition",
+      "condition": "knee pain",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-neck-and-cervical-pain",
+      "title": "Hijama for Neck & Cervical Pain",
+      "category": "condition",
+      "condition": "neck and cervical pain",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-digestive-issues-ibs",
+      "title": "Hijama for Digestive Issues & IBS",
+      "category": "condition",
+      "condition": "digestive issues and IBS",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-eczema-skin-conditions",
+      "title": "Hijama for Eczema & Skin Conditions",
+      "category": "condition",
+      "condition": "eczema and skin conditions",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-hair-loss",
+      "title": "Hijama for Hair Loss & Hair Fall",
+      "category": "condition",
+      "condition": "hair loss and hair fall",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-chronic-fatigue",
+      "title": "Hijama for Chronic Fatigue",
+      "category": "condition",
+      "condition": "chronic fatigue",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-thyroid-imbalance",
+      "title": "Hijama for Thyroid Imbalance",
+      "category": "condition",
+      "condition": "thyroid imbalance",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-high-cholesterol",
+      "title": "Hijama for High Cholesterol",
+      "category": "condition",
+      "condition": "high cholesterol",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-asthma-respiratory-wellness",
+      "title": "Hijama for Asthma & Respiratory Wellness",
+      "category": "condition",
+      "condition": "asthma and respiratory wellness",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-menstrual-cramps",
+      "title": "Hijama for Menstrual Cramps & Period Pain",
+      "category": "condition",
+      "condition": "menstrual cramps and period pain",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-allergies-sinus",
+      "title": "Hijama for Allergies & Sinus Congestion",
+      "category": "condition",
+      "condition": "allergies and sinus congestion",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-immune-support",
+      "title": "Hijama for Immune Support",
+      "category": "condition",
+      "condition": "immune support",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-weight-management",
+      "title": "Hijama for Weight Management — A Complementary View",
+      "category": "condition",
+      "condition": "weight management",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-acne-skin-health",
+      "title": "Hijama for Acne & Skin Health",
+      "category": "condition",
+      "condition": "acne and skin health",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-varicose-veins",
+      "title": "Hijama & Varicose Veins — What to Know",
+      "category": "condition",
+      "condition": "varicose veins",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-gout-uric-acid",
+      "title": "Hijama for Gout & High Uric Acid",
+      "category": "condition",
+      "condition": "gout and high uric acid",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-tennis-elbow",
+      "title": "Hijama for Tennis Elbow",
+      "category": "condition",
+      "condition": "tennis elbow",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-plantar-fasciitis",
+      "title": "Hijama for Plantar Fasciitis & Heel Pain",
+      "category": "condition",
+      "condition": "plantar fasciitis and heel pain",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-shoulder-pain",
+      "title": "Hijama for Shoulder Pain",
+      "category": "condition",
+      "condition": "shoulder pain",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-office-workers-desk-aches",
+      "title": "Hijama for Office Workers — Desk-Related Aches",
+      "category": "condition",
+      "condition": "desk-related aches for office workers",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-general-detox-wellness",
+      "title": "Hijama for General Detox & Wellness",
+      "category": "condition",
+      "condition": "general detox and wellness",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-sports-injuries",
+      "title": "Hijama for Sports Injuries",
+      "category": "condition",
+      "condition": "sports injuries",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-guidance-for-patients-in-islamabad",
+      "title": "Hijama Guidance for Patients in Islamabad & Rawalpindi",
+      "category": "other",
+      "subtype": "city-guide",
+      "city": "Islamabad and Rawalpindi",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-guidance-for-patients-in-hyderabad",
+      "title": "Hijama Guidance for Patients in Hyderabad, Sindh",
+      "category": "other",
+      "subtype": "city-guide",
+      "city": "Hyderabad",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-guidance-for-patients-in-faisalabad",
+      "title": "Hijama Guidance for Patients in Faisalabad",
+      "category": "other",
+      "subtype": "city-guide",
+      "city": "Faisalabad",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-guidance-for-patients-in-multan",
+      "title": "Hijama Guidance for Patients in Multan",
+      "category": "other",
+      "subtype": "city-guide",
+      "city": "Multan",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-guidance-for-patients-in-peshawar",
+      "title": "Hijama Guidance for Patients in Peshawar",
+      "category": "other",
+      "subtype": "city-guide",
+      "city": "Peshawar",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-guidance-for-patients-in-quetta",
+      "title": "Hijama Guidance for Patients in Quetta",
+      "category": "other",
+      "subtype": "city-guide",
+      "city": "Quetta",
+      "status": "pending"
+    },
+    {
+      "slug": "homeopathy-for-common-ailments-karachi",
+      "title": "Homeopathy for Common Ailments in Karachi",
+      "category": "other",
+      "subtype": "service",
+      "status": "pending"
+    },
+    {
+      "slug": "reiki-healing-what-to-expect",
+      "title": "Reiki Healing at Our Clinic — What to Expect",
+      "category": "other",
+      "subtype": "service",
+      "status": "published",
+      "published_date": "2026-07-28"
+    },
+    {
+      "slug": "herbal-medicine-for-liver-health",
+      "title": "Herbal (Unani) Medicine for Liver Health",
+      "category": "other",
+      "subtype": "service",
+      "status": "pending"
+    },
+    {
+      "slug": "combining-hijama-and-unani-medicine",
+      "title": "Combining Hijama and Unani Medicine — How They Work Together",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "ramadan-hijama-guidance-timing-fasting",
+      "title": "Ramadan Hijama Guidance — Timing & Fasting",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-after-hajj-umrah",
+      "title": "Hijama After Hajj or Umrah — What Travellers Ask",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-seniors-elderly-safety",
+      "title": "Hijama for Seniors — Is It Safe for the Elderly?",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "first-time-hijama-guide-for-beginners",
+      "title": "First-Time Hijama Guide for Beginners",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "choosing-a-trustworthy-hijama-practitioner",
+      "title": "Choosing a Trustworthy Hijama Practitioner — A Checklist",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "common-hijama-myths-debunked",
+      "title": "Common Hijama Myths, Debunked",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "history-of-hijama-cupping-therapy",
+      "title": "The History of Hijama & Cupping Therapy",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "seasonal-health-tips-karachi-summer",
+      "title": "Seasonal Health Tips for Karachi's Summer Heat",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "seasonal-health-tips-karachi-winter",
+      "title": "Seasonal Health Tips for Karachi's Winter",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-students-exam-stress",
+      "title": "Hijama for Students & Exam Stress",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "hijama-for-new-mothers-postnatal",
+      "title": "Hijama for New Mothers — Postnatal Recovery Guidance",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    },
+    {
+      "slug": "how-often-should-you-get-hijama",
+      "title": "How Often Should You Get Hijama? A Realistic Schedule",
+      "category": "other",
+      "subtype": "guide",
+      "status": "pending"
+    }
+  ]
+}
