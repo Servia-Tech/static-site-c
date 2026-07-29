@@ -1,0 +1,74 @@
+name: Daily article publish
+
+# Publishes one queued article per run, 3x every day.
+# Times are UTC. Karachi is UTC+5, so these land at 10:00, 16:00 and 21:00 PKT.
+on:
+  schedule:
+    - cron: '0 5 * * *'
+    - cron: '0 11 * * *'
+    - cron: '0 16 * * *'
+  workflow_dispatch:        # lets a human trigger it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-publish      # never let two runs race on the same files
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publish next queued article
+        id: pub
+        run: node content-pipeline/publish-next.js
+
+      - name: Commit and push
+        if: steps.pub.outputs.published_url != ''
+        run: |
+          git config user.name  "karachihijama-bot"
+          git config user.email "bot@karachihijama.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Publish: ${{ steps.pub.outputs.published_title }} (auto)"
+            git push
+          fi
+
+      - name: Verify it is live
+        if: steps.pub.outputs.published_url != ''
+        run: |
+          URL="${{ steps.pub.outputs.published_url }}"
+          echo "Waiting for GitHub Pages to rebuild..."
+          for i in $(seq 1 10); do
+            sleep 20
+            CODE=$(curl -s -o /dev/null -w "%{http_code}" "$URL" || echo "000")
+            echo "attempt $i: HTTP $CODE"
+            if [ "$CODE" = "200" ]; then
+              echo "LIVE: $URL"
+              exit 0
+            fi
+          done
+          echo "::warning::$URL did not return 200 within the wait window. It is committed and will usually appear shortly."
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Daily publish"
+            if [ -n "${{ steps.pub.outputs.published_url }}" ]; then
+              echo "Published: [${{ steps.pub.outputs.published_title }}](${{ steps.pub.outputs.published_url }})"
+              echo ""
+              echo "Articles left in queue: **${{ steps.pub.outputs.remaining }}**"
+            else
+              echo "Nothing published — the queue is empty. Refill \`content-pipeline/queue/\`."
+            fi
+          } >> $GITHUB_STEP_SUMMARY
