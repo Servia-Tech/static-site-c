@@ -247,7 +247,9 @@
       "title": "Hijama for Frozen Shoulder",
       "category": "condition",
       "condition": "frozen shoulder",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-07-30",
+      "published_url": "https://karachihijama.com/blog/hijama-for-frozen-shoulder.html"
     },
     {
       "slug": "hijama-for-knee-pain",
