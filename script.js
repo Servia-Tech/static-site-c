@@ -319,6 +319,21 @@ document.addEventListener("DOMContentLoaded", function () {
   initReveal();
   initDatesPopup();
 
+  // Conversion tracking: count every WhatsApp / phone tap as a GA4 event.
+  // Delegated on document so it also catches links added after load.
+  // These events become the "lead" conversions imported into Google Ads —
+  // without them the account records 0 conversions and smart bidding is blind.
+  document.addEventListener("click", function (e) {
+    const a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || typeof gtag !== "function") return;
+    const href = a.getAttribute("href") || "";
+    if (href.indexOf("wa.me") !== -1 || href.indexOf("whatsapp") !== -1) {
+      gtag("event", "whatsapp_click", { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf("tel:") === 0) {
+      gtag("event", "phone_click", { link_url: href, page_path: location.pathname });
+    }
+  }, true);
+
   // Set current year in footer.
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
