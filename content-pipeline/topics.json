@@ -266,21 +266,30 @@
       "title": "Hijama for Knee Pain",
       "category": "condition",
       "condition": "knee pain",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-08-02",
+      "published_url": "https://karachihijama.com/blog/hijama-for-knee-joint-pain.html",
+      "notes": "DUPLICATE: already covered by an existing live page under a different slug (auto-publisher). Marked published to prevent duplicate content. Do NOT write this again."
     },
     {
       "slug": "hijama-for-neck-and-cervical-pain",
       "title": "Hijama for Neck & Cervical Pain",
       "category": "condition",
       "condition": "neck and cervical pain",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-08-02",
+      "published_url": "https://karachihijama.com/blog/hijama-for-neck-pain-cervical.html",
+      "notes": "DUPLICATE: already covered by an existing live page under a different slug (auto-publisher). Marked published to prevent duplicate content. Do NOT write this again."
     },
     {
       "slug": "hijama-for-digestive-issues-ibs",
       "title": "Hijama for Digestive Issues & IBS",
       "category": "condition",
       "condition": "digestive issues and IBS",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-08-02",
+      "published_url": "https://karachihijama.com/blog/hijama-for-digestive-issues.html",
+      "notes": "DUPLICATE: already covered by an existing live page under a different slug (auto-publisher). Marked published to prevent duplicate content. Do NOT write this again."
     },
     {
       "slug": "hijama-for-eczema-skin-conditions",
@@ -421,7 +430,9 @@
       "category": "other",
       "subtype": "city-guide",
       "city": "Islamabad and Rawalpindi",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-08-06",
+      "published_url": "https://karachihijama.com/hijama-guidance-for-patients-in-islamabad.html"
     },
     {
       "slug": "hijama-guidance-for-patients-in-hyderabad",
