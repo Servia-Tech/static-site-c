@@ -654,3 +654,18 @@ body[dir="rtl"] .blog-card .bc-tag { letter-spacing: normal; }
   .map-wrap.map-big, .map-wrap.map-big iframe { min-height: 320px; }
   .map-wrap.map-contact, .map-wrap.map-contact iframe { min-height: 300px; }
 }
+
+
+/* --- Areas we serve: full internal link list (added 2026-08-21) --- */
+.area-all{margin:28px auto 0;max-width:980px;text-align:center}
+.area-all-lead{font-weight:600;margin:0 0 14px}
+.area-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.area-chip{display:inline-block;padding:8px 16px;border:1px solid rgba(0,0,0,.12);
+  border-radius:999px;text-decoration:none;font-size:.95rem;line-height:1.2;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease}
+.area-chip:hover{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.25);transform:translateY(-1px)}
+.area-all-note{margin:16px 0 0;font-size:.9rem;opacity:.8}
+@media (prefers-color-scheme:dark){
+  .area-chip{border-color:rgba(255,255,255,.18)}
+  .area-chip:hover{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.35)}
+}
