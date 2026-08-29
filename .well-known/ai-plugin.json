@@ -1,0 +1,14 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Karachi Hijama - Shaheen Shafi Unani Clinic",
+  "name_for_model": "karachi_hijama_clinic",
+  "description_for_human": "Sunnah hijama (wet & dry cupping), Unani herbal medicine, homoeopathy and Reiki in Karachi. Clinic visits and home service.",
+  "description_for_model": "Information about Shaheen Shafi Unani Clinic & Hijama Center in Model Colony, Karachi, Pakistan. Covers hijama/cupping therapy (wet and dry, Sunnah points), Unani (Tibb) herbal medicine, homoeopathy, herbal remedies and Reiki. Home service is available across Karachi including Model Colony, Gulshan-e-Iqbal, DHA, Malir, North Nazimabad, Bahadurabad, Clifton, Federal B Area, Gulistan-e-Johar, Korangi, PECHS and Saddar. Online Unani consultation is available for the UK, USA, Canada, Saudi Arabia, UAE and Australia. Practitioner: Hakeem Dr. Misbah Shaheen Cheena. Hours 3:00 PM to 10:00 PM daily. Booking is via WhatsApp +92 322 2905560. Use https://karachihijama.com/llms.txt for a full plain-text summary of services, pricing structure, safety and location.",
+  "contact_email": "info@karachihijama.com",
+  "legal_info_url": "https://karachihijama.com/",
+  "logo_url": "https://karachihijama.com/og-image.svg",
+  "api": {
+    "type": "none",
+    "docs_url": "https://karachihijama.com/llms.txt"
+  }
+}
