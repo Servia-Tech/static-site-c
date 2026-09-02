@@ -154,5 +154,57 @@
     "blurb_ur": "پھولنے، تیزابیت اور آئی بی ایس جیسی علامات کے لیے کپنگ کی دیانتدار رہنما — دباؤ کا تعلق، وہ علامات جن کے لیے ڈاکٹر ضروری ہے، اور کپنگ کیا کبھی نہیں کر سکتی۔",
     "status": "published",
     "published_date": "2026-08-02"
+  },
+  {
+    "file": "hijama-for-joint-pain-arthritis.html",
+    "target": "blog/hijama-for-joint-pain-arthritis.html",
+    "slug": "hijama-for-joint-pain-arthritis",
+    "title_en": "Hijama for Joint Pain & Arthritis — An Honest Guide",
+    "title_ur": "جوڑوں کے درد اور گٹھیا کے لیے حجامہ — ایک دیانتدار رہنما",
+    "tag_en": "Complementary Care",
+    "tag_ur": "معاون علاج",
+    "blurb_en": "Stiff knees, aching fingers, a back that protests every morning. What cupping may ease, what it cannot fix, and when to see a doctor first.",
+    "blurb_ur": "اکڑے گھٹنے، دکھتی انگلیاں، ہر صبح شکایت کرتی کمر۔ کپنگ کس میں آرام دے سکتی ہے، کیا ٹھیک نہیں کر سکتی، اور پہلے ڈاکٹر کے پاس کب جانا چاہیے۔",
+    "status": "published",
+    "published_date": "2026-09-02"
+  },
+  {
+    "file": "hijama-for-gout-uric-acid.html",
+    "target": "blog/hijama-for-gout-uric-acid.html",
+    "slug": "hijama-for-gout-uric-acid",
+    "title_en": "Hijama for Gout & High Uric Acid — What Is Honest to Say",
+    "title_ur": "گاؤٹ اور بلند یورک ایسڈ کے لیے حجامہ — دیانتداری سے کیا کہا جا سکتا ہے",
+    "tag_en": "Complementary Care",
+    "tag_ur": "معاون علاج",
+    "blurb_en": "A swollen, burning big toe at 3am is not a cupping problem. Where Hijama may sit in a gout plan, and the two things that actually move uric acid.",
+    "blurb_ur": "رات تین بجے سوجا، جلتا انگوٹھا کپنگ کا مسئلہ نہیں۔ گاؤٹ کے منصوبے میں حجامہ کہاں آ سکتا ہے، اور وہ دو چیزیں جو واقعی یورک ایسڈ کم کرتی ہیں۔",
+    "status": "published",
+    "published_date": "2026-09-02"
+  },
+  {
+    "file": "hijama-for-menstrual-cramps.html",
+    "target": "blog/hijama-for-menstrual-cramps.html",
+    "slug": "hijama-for-menstrual-cramps",
+    "title_en": "Hijama for Menstrual Cramps & Period Pain",
+    "title_ur": "ماہواری کے درد اور مروڑ کے لیے حجامہ",
+    "tag_en": "Women's Wellbeing",
+    "tag_ur": "خواتین کی صحت",
+    "blurb_en": "Cramps that stop you working or studying are not something to just endure quietly. What cupping may ease, in a private room with a female practitioner.",
+    "blurb_ur": "وہ مروڑ جو آپ کا کام یا پڑھائی روک دیں، انہیں خاموشی سے برداشت کرنے کی چیز نہیں۔ کپنگ کس میں آرام دے سکتی ہے، خاتون معالج کے ساتھ پرائیویٹ کمرے میں۔",
+    "status": "published",
+    "published_date": "2026-09-02"
+  },
+  {
+    "file": "first-time-hijama-guide-for-beginners.html",
+    "target": "blog/first-time-hijama-guide-for-beginners.html",
+    "slug": "first-time-hijama-guide-for-beginners",
+    "title_en": "Your First Hijama Session — A Guide for Beginners",
+    "title_ur": "آپ کا پہلا حجامہ سیشن — نئے آنے والوں کے لیے رہنما",
+    "tag_en": "Getting Started",
+    "tag_ur": "آغاز",
+    "blurb_en": "Does it hurt? Should I eat first? How long do the marks stay? Everything a first-timer actually worries about, answered plainly.",
+    "blurb_ur": "کیا درد ہوتا ہے؟ پہلے کھانا چاہیے؟ نشان کتنے دن رہتے ہیں؟ وہ سب کچھ جس کی پہلی بار آنے والے کو فکر ہوتی ہے، سادہ الفاظ میں۔",
+    "status": "published",
+    "published_date": "2026-09-02"
   }
 ]

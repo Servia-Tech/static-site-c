@@ -250,7 +250,9 @@
       "title": "Hijama for Joint Pain & Arthritis",
       "category": "condition",
       "condition": "joint pain and arthritis",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-02",
+      "published_url": "https://karachihijama.com/blog/hijama-for-joint-pain-arthritis.html"
     },
     {
       "slug": "hijama-for-frozen-shoulder",
@@ -338,7 +340,9 @@
       "title": "Hijama for Menstrual Cramps & Period Pain",
       "category": "condition",
       "condition": "menstrual cramps and period pain",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-02",
+      "published_url": "https://karachihijama.com/blog/hijama-for-menstrual-cramps.html"
     },
     {
       "slug": "hijama-for-allergies-sinus",
@@ -380,7 +384,9 @@
       "title": "Hijama for Gout & High Uric Acid",
       "category": "condition",
       "condition": "gout and high uric acid",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-02",
+      "published_url": "https://karachihijama.com/blog/hijama-for-gout-uric-acid.html"
     },
     {
       "slug": "hijama-for-tennis-elbow",
@@ -529,7 +535,9 @@
       "title": "First-Time Hijama Guide for Beginners",
       "category": "other",
       "subtype": "guide",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-02",
+      "published_url": "https://karachihijama.com/blog/first-time-hijama-guide-for-beginners.html"
     },
     {
       "slug": "choosing-a-trustworthy-hijama-practitioner",

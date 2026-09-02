@@ -66,10 +66,16 @@ function addToBlogIndex(item) {
       <span class="more" data-lang="en">Read →</span><span class="more" data-lang="ur">پڑھیں →</span>
     </a>
 `;
-  html = html.replace('  <div class="post-grid">\n', '  <div class="post-grid">\n' + card);
+  // CRLF-tolerant: a Windows checkout has \r\n, and matching a bare \n made this
+  // replace a silent no-op while still reporting success.
+  const gridRe = /( {2}<div class="post-grid">\r?\n)/;
+  if (!gridRe.test(html)) throw new Error('blog index: post-grid anchor not found');
+  html = html.replace(gridRe, `$1${card}`);
 
   const ld = `    {"@type":"BlogPosting","headline":"${item.title_en.replace(/"/g, '\\"')}","url":"${SITE}/${item.target}","author":{"@type":"Person","name":"Dr. Misbah Shaheen Cheena"},"datePublished":"${today}"},\n`;
-  html = html.replace('  "blogPost":[\n', '  "blogPost":[\n' + ld);
+  const ldRe = /( {2}"blogPost":\[\r?\n)/;
+  if (!ldRe.test(html)) throw new Error('blog index: blogPost anchor not found');
+  html = html.replace(ldRe, `$1${ld}`);
 
   fs.writeFileSync(BLOG_INDEX, html);
   console.log('  blog index: card + JSON-LD added');
