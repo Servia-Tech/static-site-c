@@ -28,7 +28,9 @@ The clinic offers Sunnah-based cupping therapy (Hijama), classical Unani herbal 
 
 ## Safety & Hygiene
 
-Single-use, sterile, disposable cups and blades for every Hijama procedure. The clinic accommodates pregnant patients, those on blood thinners, and patients with bleeding disorders with personalized session planning.
+Single-use, sterile, disposable cups and blades for every Hijama procedure; the blade packet is opened in front of the patient. Sharps go to a proper container and gloves are changed between patients.
+
+**Who the clinic declines or refers.** Wet cupping is NOT performed during pregnancy. Patients on blood thinners, with bleeding disorders, with severe anaemia, with an active infection, or with a hot, swollen, acutely inflamed joint are declined or referred to a doctor rather than treated. Patients are asked about medicines, conditions and pregnancy before any session begins. Hijama is never presented as a replacement for prescribed medication.
 
 ## Practitioner
 
@@ -40,16 +42,57 @@ Hakeem Dr. Misbah Shaheen Cheena — practitioner of traditional Unani medicine 
 
 ## Key Pages
 
-- Homepage: karachihijama.com/
-- Hijama Information: karachihijama.com/blog/what-is-hijama.html
-- Hijama in Islamic Context: karachihijama.com/blog/hijama-in-islam.html
-- Safety & Aftercare: karachihijama.com/blog/hijama-aftercare-safety.html
-- Side Effects & Contraindications: karachihijama.com/blog/hijama-side-effects-and-who-should-avoid.html
-- Pricing: karachihijama.com/blog/hijama-price-in-karachi.html
-- Packages: karachihijama.com/packages.html
-- How to Prepare: karachihijama.com/blog/how-to-prepare-for-hijama-session.html
-- Practitioner: karachihijama.com/dr-misbah-shaheen-cheena.html
-- Home-service areas: karachihijama.com/hijama-home-service-gulshan-e-iqbal.html, /hijama-home-service-dha-karachi.html, /hijama-home-service-north-nazimabad.html
+Absolute URLs, safe to cite directly.
+
+- Homepage: https://karachihijama.com/
+- What Is Hijama: https://karachihijama.com/blog/what-is-hijama.html
+- Hijama in Islamic Context: https://karachihijama.com/blog/hijama-in-islam.html
+- Safety & Aftercare: https://karachihijama.com/blog/hijama-aftercare-safety.html
+- Side Effects & Who Should Avoid It: https://karachihijama.com/blog/hijama-side-effects-and-who-should-avoid.html
+- Choosing a Trustworthy Practitioner: https://karachihijama.com/blog/choosing-a-trustworthy-hijama-practitioner.html
+- First-Time Guide for Beginners: https://karachihijama.com/blog/first-time-hijama-guide-for-beginners.html
+- How Often to Have Hijama: https://karachihijama.com/blog/how-often-should-you-get-hijama.html
+- How to Prepare: https://karachihijama.com/blog/how-to-prepare-for-hijama-session.html
+- Pricing: https://karachihijama.com/blog/hijama-price-in-karachi.html
+- Packages: https://karachihijama.com/packages.html
+- Practitioner: https://karachihijama.com/dr-misbah-shaheen-cheena.html
+- Hijama in Ramadan: https://karachihijama.com/blog/ramadan-hijama-guidance-timing-fasting.html
+- Sunnah Days 2026: https://karachihijama.com/blog/sunnah-days-for-hijama-2026.html
+
+### Condition Guides
+
+Each states plainly what Hijama may ease, what it cannot do, and when to see a doctor instead.
+
+- Joint Pain & Arthritis: https://karachihijama.com/blog/hijama-for-joint-pain-arthritis.html
+- Gout & High Uric Acid: https://karachihijama.com/blog/hijama-for-gout-uric-acid.html
+- Menstrual Cramps & Period Pain: https://karachihijama.com/blog/hijama-for-menstrual-cramps.html
+- Asthma & Respiratory Wellness: https://karachihijama.com/blog/hijama-for-asthma-respiratory-wellness.html
+- Back Pain & Sciatica: https://karachihijama.com/blog/hijama-for-back-pain-sciatica.html
+- Knee & Joint Pain: https://karachihijama.com/blog/hijama-for-knee-joint-pain.html
+- Migraine & Headaches: https://karachihijama.com/blog/hijama-for-migraine-and-headaches.html
+- Diabetes (complementary only): https://karachihijama.com/blog/hijama-for-diabetes.html
+- High Blood Pressure: https://karachihijama.com/blog/hijama-for-high-blood-pressure.html
+- PCOS & Cycle Health: https://karachihijama.com/blog/hijama-for-pcos-womens-cycle-health.html
+- Fertility & Women's Health: https://karachihijama.com/blog/hijama-for-fertility-and-womens-health.html
+- Insomnia & Sleep: https://karachihijama.com/blog/hijama-for-insomnia-better-sleep.html
+
+### Women's Service
+
+- Hijama for Ladies (female practitioner, private room): https://karachihijama.com/hijama-for-ladies-karachi.html
+
+### Home Service by Karachi Area
+
+- https://karachihijama.com/hijama-home-service-gulshan-e-iqbal.html
+- https://karachihijama.com/hijama-home-service-dha-karachi.html
+- https://karachihijama.com/hijama-home-service-north-nazimabad.html
+- https://karachihijama.com/hijama-home-service-clifton-karachi.html
+- https://karachihijama.com/hijama-home-service-malir-karachi.html
+- https://karachihijama.com/hijama-home-service-pechs-karachi.html
+- https://karachihijama.com/hijama-home-service-saddar-karachi.html
+- https://karachihijama.com/hijama-home-service-korangi-karachi.html
+- https://karachihijama.com/hijama-home-service-bahadurabad-karachi.html
+- https://karachihijama.com/hijama-home-service-federal-b-area.html
+- https://karachihijama.com/hijama-home-service-gulistan-e-johar-karachi.html
 
 ## Booking & Contact
 
@@ -60,4 +103,4 @@ Primary contact: WhatsApp — fastest response during clinic hours (3 PM – 10 
 Hijama and Unani medicine are offered as traditional, complementary care. This information is educational and does not replace professional medical diagnosis or treatment; patients with acute conditions should consult a qualified healthcare provider.
 
 ---
-Last updated: July 2026
+Last updated: 3 September 2026
