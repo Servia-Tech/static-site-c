@@ -206,5 +206,57 @@
     "blurb_ur": "کیا درد ہوتا ہے؟ پہلے کھانا چاہیے؟ نشان کتنے دن رہتے ہیں؟ وہ سب کچھ جس کی پہلی بار آنے والے کو فکر ہوتی ہے، سادہ الفاظ میں۔",
     "status": "published",
     "published_date": "2026-09-02"
+  },
+  {
+    "file": "how-often-should-you-get-hijama.html",
+    "target": "blog/how-often-should-you-get-hijama.html",
+    "slug": "how-often-should-you-get-hijama",
+    "title_en": "How Often Should You Get Hijama? A Realistic Schedule",
+    "title_ur": "حجامہ کتنی بار کروانا چاہیے؟ ایک حقیقت پسندانہ شیڈول",
+    "tag_en": "Practical Guidance",
+    "tag_ur": "عملی رہنمائی",
+    "blurb_en": "Some people are told every month, some every week. Neither is a rule. How to pick a sensible interval — and how to tell when to stop.",
+    "blurb_ur": "کچھ کو ہر مہینہ بتایا جاتا ہے، کچھ کو ہر ہفتہ۔ دونوں اصول نہیں۔ مناسب وقفہ کیسے چنیں — اور کب رکنا ہے۔",
+    "status": "published",
+    "published_date": "2026-09-03"
+  },
+  {
+    "file": "choosing-a-trustworthy-hijama-practitioner.html",
+    "target": "blog/choosing-a-trustworthy-hijama-practitioner.html",
+    "slug": "choosing-a-trustworthy-hijama-practitioner",
+    "title_en": "Choosing a Trustworthy Hijama Practitioner — A Checklist",
+    "title_ur": "قابلِ اعتماد حجامہ معالج کا انتخاب — ایک چیک لسٹ",
+    "tag_en": "Safety First",
+    "tag_ur": "حفاظت اوّل",
+    "blurb_en": "Reused blades transmit hepatitis. Seven checks to make before you let anyone cup you — and the answers you should expect.",
+    "blurb_ur": "دوبارہ استعمال شدہ بلیڈ ہیپاٹائٹس منتقل کرتے ہیں۔ کسی کو حجامہ کرنے دینے سے پہلے سات جانچیں — اور متوقع جوابات۔",
+    "status": "published",
+    "published_date": "2026-09-03"
+  },
+  {
+    "file": "ramadan-hijama-guidance-timing-fasting.html",
+    "target": "blog/ramadan-hijama-guidance-timing-fasting.html",
+    "slug": "ramadan-hijama-guidance-timing-fasting",
+    "title_en": "Hijama in Ramadan — Timing, Fasting & Practical Advice",
+    "title_ur": "رمضان میں حجامہ — وقت، روزہ اور عملی مشورے",
+    "tag_en": "Ramadan Guidance",
+    "tag_ur": "رمضان رہنمائی",
+    "blurb_en": "Why we book after iftar, how to hydrate through the day, and the people we ask to wait until after Eid.",
+    "blurb_ur": "ہم افطار کے بعد کیوں بک کرتے ہیں، دن بھر پانی کیسے پورا کریں، اور وہ لوگ جنہیں ہم عید کے بعد تک انتظار کا کہتے ہیں۔",
+    "status": "published",
+    "published_date": "2026-09-03"
+  },
+  {
+    "file": "hijama-for-asthma-respiratory-wellness.html",
+    "target": "blog/hijama-for-asthma-respiratory-wellness.html",
+    "slug": "hijama-for-asthma-respiratory-wellness",
+    "title_en": "Hijama for Asthma & Respiratory Wellness — Read This First",
+    "title_ur": "دمہ اور تنفس کی صحت کے لیے حجامہ — پہلے یہ پڑھیں",
+    "tag_en": "Complementary Care",
+    "tag_ur": "معاون علاج",
+    "blurb_en": "Karachi's air is hard on the chest. What cupping may ease around the ribs and shoulders — and the one thing you must never stop.",
+    "blurb_ur": "کراچی کی ہوا سینے پر بھاری ہے۔ کپنگ پسلیوں اور کندھوں کے گرد کیا آرام دے سکتی ہے — اور وہ ایک چیز جو کبھی نہ چھوڑیں۔",
+    "status": "published",
+    "published_date": "2026-09-03"
   }
 ]

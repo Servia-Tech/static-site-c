@@ -333,7 +333,9 @@
       "title": "Hijama for Asthma & Respiratory Wellness",
       "category": "condition",
       "condition": "asthma and respiratory wellness",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-03",
+      "published_url": "https://karachihijama.com/blog/hijama-for-asthma-respiratory-wellness.html"
     },
     {
       "slug": "hijama-for-menstrual-cramps",
@@ -514,7 +516,9 @@
       "title": "Ramadan Hijama Guidance — Timing & Fasting",
       "category": "other",
       "subtype": "guide",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-03",
+      "published_url": "https://karachihijama.com/blog/ramadan-hijama-guidance-timing-fasting.html"
     },
     {
       "slug": "hijama-after-hajj-umrah",
@@ -544,7 +548,9 @@
       "title": "Choosing a Trustworthy Hijama Practitioner — A Checklist",
       "category": "other",
       "subtype": "guide",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-03",
+      "published_url": "https://karachihijama.com/blog/choosing-a-trustworthy-hijama-practitioner.html"
     },
     {
       "slug": "common-hijama-myths-debunked",
@@ -593,7 +599,9 @@
       "title": "How Often Should You Get Hijama? A Realistic Schedule",
       "category": "other",
       "subtype": "guide",
-      "status": "pending"
+      "status": "published",
+      "published_date": "2026-09-03",
+      "published_url": "https://karachihijama.com/blog/how-often-should-you-get-hijama.html"
     }
   ]
 }
