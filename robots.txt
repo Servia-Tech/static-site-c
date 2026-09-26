@@ -104,6 +104,7 @@ Allow: /
 Disallow: /content-pipeline/
 
 User-agent: Bytespider
-Disallow: /
+Allow: /
+Disallow: /content-pipeline/
 
 Sitemap: https://karachihijama.com/sitemap.xml
