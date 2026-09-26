@@ -1,6 +1,22 @@
+# karachihijama.com — search engines and AI answer engines are welcome.
+
 User-agent: *
 Allow: /
 
+# Search
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI assistants and answer engines
 User-agent: GPTBot
 Allow: /
 
@@ -13,16 +29,25 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-User-agent: Google-Extended
+User-agent: PerplexityBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot-Extended

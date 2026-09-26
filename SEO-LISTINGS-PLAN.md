@@ -28,15 +28,15 @@ different phone format) dilute the signal. Copy-paste from the block below — d
 | **Physician** | Dr Misbah Shaheen Cheena |
 | **Geo (lat, lng)** | 24.9072588, 67.1925137 |
 | **Google Maps** | https://maps.app.goo.gl/VTyGuWixhJyLerCS6 |
-| **Hours** | Mon–Sat (confirm exact times before publishing; keep identical across all listings) |
+| **Hours** | Daily, 3:00 PM – 10:00 PM (as published on every page of the site; owner to confirm, then keep identical across all listings) |
 
-> ⚠️ **NEVER** write the old/incorrect locality "Model Colony". The clinic is in **Model Colony, Karachi**.
+> ⚠️ The existing Google Maps listing is reported to read "Shaheen Shafi Unani Clinic And Hijama center" with an address along the lines of "Sheet # 20, House # 32, 33 … Nishterabad", while the site uses "&" and "Model Colony". The owner must decide which name/address form is correct and make the Google Business Profile and the site match exactly before building citations. Do not confuse the clinic with the unrelated business "Shaheen Herbal & Hijama".
 
 **Short business description (paste into "About" fields, ~50 words):**
 > Shaheen Shafi Unani Clinic & Hijama Center in Model Colony, Karachi offers authentic Hijama
 > (wet cupping therapy), Unani medicine and alternative-medicine consultations under physician
-> Dr Misbah Shaheen Cheena. We treat pain, stress, migraines, digestive and general-wellness
-> concerns using traditional, hygienic, single-use cupping. Walk-in & WhatsApp booking:
+> Dr Misbah Shaheen Cheena. Traditional, complementary care with hygienic, single-use cupping;
+> clinic in Model Colony (open daily 3–10 PM) and home service across Karachi. Walk-in & WhatsApp booking:
 > +92 322 2905560.
 
 **Keywords / tags (where a listing allows them):**

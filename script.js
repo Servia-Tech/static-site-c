@@ -16,6 +16,17 @@ const CLINIC_WHATSAPP       = "923222905560";                 // from the clinic
 const CLINIC_PHONE_DISPLAY  = "+92 322 2905560";              // from the clinic's own Google listing
 /* ------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------
+   Enquiry email relay (owner's multi-site Google Apps Script -> Gmail).
+   Leave RELAY_URL empty to keep the booking form WhatsApp-only.
+   When set, a booking that includes an email address is ALSO emailed to the
+   clinic; WhatsApp stays the primary route either way.
+   ------------------------------------------------------------------------- */
+const RELAY_URL  = "";
+const RELAY_SITE = "karachihijama.com";
+const PAGE_LOADED_AT = Date.now();
+/* ------------------------------------------------------------------------- */
+
 const DEFAULT_WA_TEXT = {
   en: "Assalamu alaikum, I'd like to book an appointment at Shaheen Shafi Unani Clinic & Hijama Center.",
   ur: "السلام علیکم، میں شاہین شافی یونانی کلینک اور حجامہ سینٹر میں اپائنٹمنٹ لینا چاہتا/چاہتی ہوں۔"
@@ -205,14 +216,54 @@ function loadUrduFont() {
   document.head.appendChild(l);
 }
 
-/* ---- Booking form -> pre-filled WhatsApp message ---- */
+/* ---- Booking form -> pre-filled WhatsApp message (+ optional email copy via relay) ---- */
+const FORM_MSG = {
+  needName:  { en: "Please enter your name.", ur: "براہِ کرم اپنا نام درج کریں۔" },
+  needPhone: { en: "Please enter a phone number we can reach you on.", ur: "براہِ کرم ایسا فون نمبر درج کریں جس پر ہم رابطہ کر سکیں۔" },
+  badEmail:  { en: "That email address doesn't look right — fix it or leave it empty.", ur: "یہ ای میل درست نہیں لگتی — درست کریں یا خالی چھوڑ دیں۔" },
+  opened:    { en: "WhatsApp is opening with your details — please press send there. If it didn't open, ", ur: "واٹس ایپ آپ کی تفصیلات کے ساتھ کھل رہا ہے — براہِ کرم وہاں بھیجیں دبائیں۔ اگر نہیں کھلا تو " },
+  tapHere:   { en: "tap here to open WhatsApp", ur: "واٹس ایپ کھولنے کے لیے یہاں دبائیں" },
+  mailOk:    { en: " A copy has also been emailed to the clinic.", ur: " ایک کاپی ای میل کے ذریعے کلینک کو بھی بھیج دی گئی ہے۔" },
+  mailFail:  { en: " (The email copy could not be sent — please make sure you send the WhatsApp message, or call +92 322 2905560.)", ur: " (ای میل کاپی نہیں جا سکی — براہِ کرم واٹس ایپ پیغام ضرور بھیجیں یا 2905560 322 92+ پر کال کریں۔)" }
+};
+function fmsg(k) { return (FORM_MSG[k][currentLang] || FORM_MSG[k].en); }
+
+function setFormStatus(parts, isError) {
+  const el = document.getElementById("formStatus");
+  if (!el) return;
+  el.textContent = "";
+  parts.forEach(function (p) {
+    if (typeof p === "string") el.appendChild(document.createTextNode(p));
+    else el.appendChild(p);
+  });
+  el.style.color = isError ? "#b3261e" : "";
+  el.hidden = false;
+}
+
+function sendToRelay(payload) {
+  // text/plain keeps this a "simple" CORS request (no preflight) for Apps Script.
+  return fetch(RELAY_URL, {
+    method: "POST",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify(payload)
+  }).then(function (r) { return r.json(); })
+    .then(function (j) { return !!(j && j.ok === true); })
+    .catch(function () { return false; });
+}
+
 function handleForm(e) {
   e.preventDefault();
   const f = e.target;
   const name = (f.elements.name.value || "").trim();
   const phone = (f.elements.phone.value || "").trim();
+  const email = f.elements.email ? (f.elements.email.value || "").trim() : "";
+  const honeypot = f.elements.website ? (f.elements.website.value || "") : "";
   const service = f.elements.service.value || "";
   const message = (f.elements.message.value || "").trim();
+
+  if (!name) { setFormStatus([fmsg("needName")], true); f.elements.name.focus(); return; }
+  if (phone.replace(/\D/g, "").length < 7) { setFormStatus([fmsg("needPhone")], true); f.elements.phone.focus(); return; }
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { setFormStatus([fmsg("badEmail")], true); f.elements.email.focus(); return; }
 
   let text;
   if (currentLang === "ur") {
@@ -230,7 +281,39 @@ function handleForm(e) {
            (message ? "Message: " + message + "\n" : "") +
            "— Shaheen Shafi Unani Clinic & Hijama Center";
   }
-  window.open(waLink(text), "_blank", "noopener");
+  if (email) text += "\nEmail: " + email;
+
+  // Bots fill the hidden "website" field: pretend success, send nothing.
+  if (honeypot) { setFormStatus(["Thank you."], false); f.reset(); return; }
+
+  // WhatsApp is the primary route (opened synchronously so popup blockers allow it).
+  const url = waLink(text);
+  window.open(url, "_blank", "noopener");
+  const a = document.createElement("a");
+  a.href = url; a.target = "_blank"; a.rel = "noopener"; a.textContent = fmsg("tapHere");
+  setFormStatus([fmsg("opened"), a, "."], false);
+  if (typeof gtag === "function") {
+    gtag("event", "generate_lead", { form_name: "booking", method: "whatsapp", service: service, page_path: location.pathname });
+  }
+
+  // Optional email copy through the relay (needs an email address to reply to).
+  if (RELAY_URL && email) {
+    sendToRelay({
+      site: RELAY_SITE,
+      form: "booking",
+      name: name,
+      email: email,
+      phone: phone,
+      subject: "Booking request: " + service,
+      body: text,
+      page: location.pathname,
+      website: honeypot,
+      elapsed: Date.now() - PAGE_LOADED_AT
+    }).then(function (ok) {
+      setFormStatus([fmsg("opened"), a, "." + fmsg(ok ? "mailOk" : "mailFail")], !ok);
+      if (typeof gtag === "function") gtag("event", ok ? "relay_sent" : "relay_failed", { form_name: "booking" });
+    });
+  }
 }
 
 /* ---- Mobile nav ---- */
@@ -308,6 +391,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const form = document.getElementById("bookingForm");
   if (form) form.addEventListener("submit", handleForm);
+  if (RELAY_URL) {
+    document.querySelectorAll("[data-relay-note]").forEach(function (el) { el.hidden = false; });
+  }
 
   const navToggle = document.getElementById("navToggle");
   if (navToggle) navToggle.addEventListener("click", toggleNav);

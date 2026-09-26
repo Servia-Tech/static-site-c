@@ -111,6 +111,15 @@ def _jsonld(t):
     return "\n".join(out)
 
 
+def _page_title(seo_title):
+    """<title> should stay within ~60 characters so it is not truncated in results.
+    The brand suffix is only added when it fits."""
+    for suffix in (" | Shaheen Shafi Unani Clinic, Karachi", " | Karachi Hijama", ""):
+        if len(seo_title + suffix) <= 60:
+            return seo_title + suffix
+    return seo_title
+
+
 def _head(t, style):
     url = "%s/%s" % (SITE, t["target"])
     return """<!DOCTYPE html>
@@ -119,7 +128,7 @@ def _head(t, style):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>%(seo_title)s | Shaheen Shafi Unani Clinic, Karachi</title>
+<title>%(page_title)s</title>
 <meta name="description" content="%(seo_desc)s">
 <meta name="keywords" content="%(keywords)s">
 <link rel="canonical" href="%(url)s">
@@ -132,21 +141,29 @@ def _head(t, style):
 <meta property="og:url" content="%(url)s">
 <meta property="og:locale" content="en_PK">
 <meta property="og:locale:alternate" content="ur_PK">
-<meta property="og:image" content="%(site)s/og-image.svg">
+<meta property="og:image" content="%(site)s/img/clinic-1.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="Registration certificates on the wall at Shaheen Shafi Unani Clinic &amp; Hijama Center, Model Colony, Karachi">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="%(site)s/img/clinic-1.jpg">
 <meta name="twitter:title" content="%(seo_title)s">
 <meta name="twitter:description" content="%(og_desc)s">
 
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap">
 
 %(jsonld)s
 
 %(style)s
+<!-- Google tag (gtag.js) — GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0BJ0DVJEV"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-L0BJ0DVJEV');</script>
 </head>
 """ % dict(seo_title=_e(t["seo_title"]), seo_desc=_e(t["seo_desc"]),
+           page_title=_e(_page_title(t["seo_title"])),
            keywords=_e(t["keywords"]), url=url, site=SITE,
            og_desc=_e(t.get("og_desc", t["seo_desc"])[:200]),
            jsonld=_jsonld(t), style=style)
@@ -266,7 +283,7 @@ def _body(t):
                    _e(r["d_en"]), _e(r["d_ur"])))
         parts.append('    </ul>\n  </section>\n')
 
-    parts.append('</article>\n')
+    parts.append('</article>\n</main>\n\n')
     return "".join(parts)
 
 
