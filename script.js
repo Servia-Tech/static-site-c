@@ -22,7 +22,7 @@ const CLINIC_PHONE_DISPLAY  = "+92 322 2905560";              // from the clinic
    When set, a booking that includes an email address is ALSO emailed to the
    clinic; WhatsApp stays the primary route either way.
    ------------------------------------------------------------------------- */
-const RELAY_URL  = "";
+const RELAY_URL  = "https://script.google.com/macros/s/AKfycbxmj4U83-iA7WA0eRmtZY3m1koPRyWHhL_E0sP0Hkkbi6gNjrqmbmwgRXvUTWbNRCTVfA/exec";
 const RELAY_SITE = "karachihijama.com";
 const PAGE_LOADED_AT = Date.now();
 /* ------------------------------------------------------------------------- */
