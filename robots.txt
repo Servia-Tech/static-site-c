@@ -1,78 +1,107 @@
 # karachihijama.com — search engines and AI answer engines are welcome.
+# /content-pipeline/ is internal publishing tooling, not a public page; it is blocked in every group because a named group overrides *.
 
 User-agent: *
 Allow: /
+Disallow: /content-pipeline/
 
 # Search
 User-agent: Googlebot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Applebot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: DuckDuckBot
 Allow: /
+Disallow: /content-pipeline/
+
+User-agent: YandexBot
+Allow: /
+Disallow: /content-pipeline/
 
 # AI assistants and answer engines
 User-agent: GPTBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Claude-User
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: DuckAssistBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: YouBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: FacebookBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: CCBot
 Allow: /
+Disallow: /content-pipeline/
 
 User-agent: Bytespider
 Disallow: /
